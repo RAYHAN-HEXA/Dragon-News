@@ -1,12 +1,16 @@
 import React from 'react';
 import { Outlet } from 'react-router';
 import Navbar from '../../Components/Navbar/Navbar';
+import LatestNews from '../../Components/LatestNews/LatestNews';
 
 const Homelayout = () => {
     return (
         <div >
            <header>
 <Navbar></Navbar>
+<section className='w-11/12 mx-auto' >
+    <LatestNews></LatestNews>
+</section>
            </header>   
         <section className="left-side"></section>
         <section className="main-content">
