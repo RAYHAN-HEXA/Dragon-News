@@ -14,7 +14,9 @@ const Categories = () => {
          <div className='grid grid-cols-1 gap-3'>
               {
             categories.map((category)=>(
-                <NavLink to={`/categroy/${category.id}`} key={category.id} className={'btn bg-base-100 border-0 hover:bg-base-200 '} >
+                <NavLink 
+                
+                to={`/categroy/${category.id}`} key={category.id} className={'btn bg-base-100 border-0 hover:bg-base-200 text-accent font-semibold '} >
                    {category.name} 
                    
                 </NavLink>
