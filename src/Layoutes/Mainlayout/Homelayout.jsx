@@ -5,6 +5,7 @@ import LatestNews from '../../Components/LatestNews/LatestNews';
 import NavHero from '../../Components/NavHero/NavHero';
 import LeftAside from '../HomeLayout/LeftAside';
 import RightAside from '../HomeLayout/RightAside';
+import NewsCard from '../../Components/newsCard/NewsCard';
 
 const Homelayout = () => {
     return (
@@ -23,7 +24,9 @@ const Homelayout = () => {
          <LeftAside></LeftAside>
      </aside>
         <section className="main-content col-span-6">
-            <Outlet></Outlet>
+            <Outlet>
+                <NewsCard></NewsCard>
+            </Outlet>
         </section>
       <aside className='col-span-3'>
             <RightAside></RightAside>
