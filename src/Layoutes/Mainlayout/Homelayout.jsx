@@ -20,7 +20,7 @@ const Homelayout = () => {
 </nav>
            </header>   
     <main className='w-11/12 mx-auto my-3  grid grid-cols-12 ' >
-         <aside className='col-span-3' >
+         <aside className='col-span-3 sticky h-fit top-5 ' >
          <LeftAside></LeftAside>
      </aside>
         <section className="main-content col-span-6">
@@ -28,7 +28,7 @@ const Homelayout = () => {
                 <NewsCard></NewsCard>
             </Outlet>
         </section>
-      <aside className='col-span-3'>
+      <aside className='col-span-3 sticky h-fit top-0 '>
             <RightAside></RightAside>
       </aside>
     </main>
